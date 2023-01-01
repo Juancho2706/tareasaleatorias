@@ -44,3 +44,9 @@ button:hover{
     left: 10%;
     top: 15%;
 }
+input:invalid{
+border-color: red;
+}
+input:valid{
+    border-color: green;
+}
