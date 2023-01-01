@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Forms</title>
+    <link rel="stylesheet" href="inputstyle.css">
+</head>
+<body>
+    <div class="ventana">
+        <form action="http://httpbin.org/post" method="post">
+            <fieldset>
+                <legend>TUS DATOS</legend>
+                <label for="first_name">*First Name:</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Primer Nombre..." required>
+            </fieldset>
+            <div>
+                <label for="elcorreo">*Dame tu EMAIL CHAMO:</label>
+                <input type="email" id="elcorreo" name="elcorreo" placeholder="example@somemail.com" required>
+            </div>
+            <div>
+                <label for="contrasena">*Tu passsssssword</label>
+                <input type="password" id="contrasena" name="contrasena" required minlength="8" maxlength="10"></input>
+            </div>    
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>   
+    <div class="ventana numero2">
+        <label for="tunombre">Cual es tu nombre mi chico?</label>
+        <input type="text" id="tunombre">
+        <button type="button" class="eseste">Es este</button>
+        <h2 class="minombre"></h2>
+    </div>
+    <div class="ventana numero2">
+        <label for="cantidad">Cantidade de nepes al dia:</label>
+        <input type="number" name="cantidad" id="cantidad">
+    </div>
+    <div class="ventana numero2">
+        <label for="fechita">Tu ultima vez:</label>
+        <input type="date" name="fechita" id="fechita">
+        <div>
+            <input type="radio" id="child" name="ticket_type" value="child">
+            <label for="child">Child</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="adult" name="ticket_type" value="adult">
+            <label for="adult">Adult</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="senior" name="ticket_type" value="senior">
+            <label for="senior">Senior</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sausage" name="topping" value="sausage">
+            <label for="sausage">Sausage</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="onions" name="topping" value="onions">
+            <label for="onions">Onions</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label>
+          </div>
+    </div>
+
+    <textarea name="" id="" cols="30" rows="10">Aca va algo dude...</textarea>
+    <div class="ventana numero 2 absoluta">
+        <select name="Cositas" id="">
+            <optgroup label="Propeople">
+                <option value="Squadalah">Maxziger</option>
+                <option value="Daxrus">Daxrus</option>
+                <option value="Dianitacpv4">Dianitacpv4</option>
+            </optgroup>
+            <optgroup label="Noobs">
+                <option value="Chavez">Chavez</option>
+                <option value="Yourex">Your Ex</option>
+                <option value="Dianitacpv4">Dianitacpv4</option>
+            </optgroup>
+        </select>
+        <div>
+            <input type="checkbox" id="newsletter" name="news_letter">
+            <label for="newsletter">Send me the news letter</label>
+          </div>
+    </div>
+</body>
+</html>
+<script src="eljavascript.js"></script>
