@@ -1,0 +1,59 @@
+.container{
+    display: grid;
+    grid-template: 90px 60px / 120px 50px;
+    grid-auto-rows: 50px;
+    column-gap: 10px;
+    row-gap: 80px;
+}
+.container > div {
+    border: 1px solid blue;
+  }
+
+.container2{
+    display: inline-grid;
+    grid-template: 100px 100px 100px 100px 100px / 100px 100px 100px 100px 100px;
+    border: 2px solid;
+}
+.container2 > div {
+    border: 1px solid;
+}
+.room{
+    grid-column: 1 /5;
+}
+.sala{
+    grid-column: 5/6;
+    grid-row: 1 / 6;
+}
+.solito{
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+.container3{
+    display: inline-grid;
+    grid-template: 100px 100px 100px 100px 100px / 100px 100px 100px 100px 100px;
+    grid-template-areas: "item1 item1 item1 item1 item4"
+    "item1 item1 item1 item1 item4"
+    "item5 item6 item3 item3 item4"
+    "item7 item7 item7 item7 item4"
+    "item8 item8 . . item4";
+}
+.container3 > div {
+    border: 1px solid;
+}
+.item1{
+    grid-area: item1;
+}.item2{
+    grid-area: item2;
+}.item3{
+    grid-area: item3;
+}.item4{
+    grid-area: item4;
+}.item5{
+    grid-area: item5;
+}.item6{
+    grid-area: item6;
+}.item7{
+    grid-area: item7;
+}.item8{
+    grid-area: item8;
+}
